@@ -2,6 +2,10 @@
 
 Этот проект создан при помощи [Create React App](https://github.com/facebook/create-react-app).
 
+### Вступление
+
+Приложение является альтернативной версией [чата][chat]
+
 ## Доступные скрипты
 
 В папке проекта вы можете запустить:
@@ -75,3 +79,4 @@ firebase.initializeApp({
 [gif]:https://media.giphy.com/media/HPKyOJLFU21IEp8LGV/giphy.gif
 [react]:https://ru.reactjs.org/
 [fb]:https://firebase.google.com/
+[chat]:https://github.com/ArtemKhairov/chat
