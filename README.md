@@ -1,70 +1,77 @@
-# Getting Started with Create React App
+# Web Chat React ⚛️
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Этот проект создан при помощи [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## Доступные скрипты
 
-In the project directory, you can run:
+В папке проекта вы можете запустить:
 
 ### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Запустить приложение в режиме разработки.\
+Открыть [http://localhost:3000](http://localhost:3000) чтобы посмотреть проект.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Страница автоматически перезагрузится если вы сделаете изменения.\
+Все ошибки будут показаны в консоли.
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
 ### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Собирает ваше приложение для продакшена в папке `build` .\
+Сборка оптимизируется для достижения максимальной производительности
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Что умеет это SPA ?
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Авторизация при помощи Google аккаунта
+- Все отправленные сообщения хранятся в FireBase Cloud FireStore
+- История всех сообщений 
+- Отображение аватара пользователя
+- Выход из приложения посредством нажатия кнопки "Выйти"
+- Блокировка отправки пустого сообщения
 
-### `npm run eject`
+## Интерфейс 
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Приложене имеет приятный вид
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Цветовая гамма прекрасно подходит для использования вечером и ночью
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Отсутствуют яркие и броские цвета 
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+Внешний вид приложения:
 
-## Learn More
+![gif]
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Использование 
 
-### Code Splitting
+Для корректной работы приложения вам необходимо иметь учетную запись [Firebase][fb]
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+В файле App.js вставить данные вашего приложения в следующие поля
 
-### Analyzing the Bundle Size
+```js
+firebase.initializeApp({
+  apiKey: "",
+  authDomain: "",
+  projectId: "",
+  storageBucket: "",
+  messagingSenderId: "",
+  appId: ""
+})
+```
+Либо обратиться ко мне
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Технологии
 
-### Making a Progressive Web App
+- [React][react]
+- [Firebase][fb] бесплатный хостинг приложений ,а также бэкенд
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
+## Сотрудничество
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Если вы нашли ошибку или хотите помочь сделать это SPA лучше,оптимизированней или добавить функционал, то свяжитесь со мной :)
 
-### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+[gif]:https://media.giphy.com/media/HPKyOJLFU21IEp8LGV/giphy.gif
+[react]:https://ru.reactjs.org/
+[fb]:https://firebase.google.com/
